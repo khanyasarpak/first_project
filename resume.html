@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yasar Khan Resume</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:60%;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align:center;
+    padding-bottom:15px;
+    border-bottom:2px solid #ddd;
+}
+
+h1{
+    color:#333;
+}
+
+.section{
+    margin-top:20px;
+}
+
+.section h2{
+    color:#444;
+    border-bottom:1px solid #ddd;
+    padding-bottom:5px;
+}
+
+ul{
+    list-style-type:square;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 15px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#time{
+    margin-top:15px;
+    font-size:14px;
+    color:gray;
+}
+</style>
 </head>
+
 <body>
-    <h1>Hello, I am Yasar Khan Kotak</h1>
+
+<div class="container">
+
+<header>
+<h1>Yasar Khan</h1>
+<p>Student at Asia University</p>
+<p>Student ID: 114021145</p>
+</header>
+
+<div class="section">
+<h2>About Me</h2>
+<p>I am a Computer Science student at Asia University. I am interested in web development and programming.</p>
+</div>
+
+<div class="section">
+<h2>Education</h2>
+<ul>
+<li>Asia University, Taiwan</li>
+<li>Department: Computer Science and Information Engineering</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Skills</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Basic Programming</li>
+</ul>
+</div>
+
+<button onclick="showMessage()">Click for Message</button>
+
+<p id="time"></p>
+
+</div>
+
+<script>
+function showMessage(){
+    alert("Welcome to Yasar Khan's Resume!");
+}
+
+let today = new Date();
+document.getElementById("time").innerHTML = 
+"Last Updated: " + today.toDateString();
+</script>
+
 </body>
 </html>
